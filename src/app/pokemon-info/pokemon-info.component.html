@@ -1,0 +1,20 @@
+
+<h2>Informations on {{pokemon.name}} ID. {{pokemon.id}} :</h2>
+<div class="container" id="container">
+  <div class="containerimg">
+    <img id="spriteimg" src={{pokemon.sprites.front_default}} />
+    <div class="underimg">
+      <h2>TYPES</h2>
+      <br />
+      <p *ngFor="let elem of pokemon.types">    {{elem.type.name}} </p>
+    </div>
+  </div>
+
+  <div>
+    <h2>STATS</h2>
+    <p *ngFor="let elem of pokemon.stats">    {{elem.stat.name}} : {{elem.base_stat}} (effort:{{elem.effort}})</p>
+  </div>
+
+</div>
+
+

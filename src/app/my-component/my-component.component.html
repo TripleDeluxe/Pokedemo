@@ -1,0 +1,14 @@
+<p>Il y a {{pokemonCount}} Pokémons répertoriés ici !</p>
+<input [(ngModel)]="id" (ngModelChange)="setId()"/>
+<p>Chaîne de recherche : {{id}}</p>
+<!--<input readonly value="{{id}}">-->
+<select [(ngModel)]="id" (ngModelChange)="setId()">
+  <option value="">Veuillez sélectionner un pokémon !</option>
+  <option *ngFor="let pokemon of (pokemonList | filterPokemonPipe: 'name': id); let i=index">{{pokemon.name}}</option>
+</select>
+<!--<ul>
+  <li *ngFor="let result of pokemonList.results; let i = index">
+    <button (click)="setPokemonId(i)">{{result.name}}</button>
+  </li>
+</ul>-->
+

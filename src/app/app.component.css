@@ -1,0 +1,17 @@
+.container {
+  font-family: pokemon, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-size: larger;
+  text-align: center;
+  color: #FDD100;
+  text-shadow: 4px 0 0 #2466B5, -4px 0 0 #2466B5, 0 4px 0 #2466B5, 0 -4px 0 #2466B5, 2px 2px #2466B5, -2px -2px 0 #2466B5, 2px -2px 0 #2466B5, -2px 2px 0 #2466B5;
+  background-color: rgb(128, 128, 128, 60%);
+}
+
+
+
+
+@font-face {
+  font-family: pokemon;
+  src: url(assets/font/PokemonSolid.ttf) format('truetype');
+}
+
